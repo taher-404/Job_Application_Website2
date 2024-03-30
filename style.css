@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 body{
@@ -15,7 +15,7 @@ body{
     padding: 20px;
     background-color: white;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 150px;
     box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
     border-radius: 10px;
 }
@@ -30,14 +30,14 @@ body{
     flex-direction: column;
 }
 label{
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 input, select, textarea{
     padding: 6px 10px ;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 10px;
+    font-size: 15px;
 }
 input, textarea:focus{
     outline-color: #ccc;
@@ -63,10 +63,23 @@ input[type='submit'] {
 }
 
 @media (max-width:460px){
+    body{
+        background-color: white;
+        
+    }
     .textarea_control{
         grid-column: 1/span 1;
     }
     .apply_box{
         margin-top: 0;
+    }
+    label{
+        font-size: 25px;
+    }
+    input, select, textarea{
+        padding: 6px 10px ;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 20px;
     }
 }
